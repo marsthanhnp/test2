@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/bg_white"
+        android:layout_width="350dp"
+        android:layout_height="350dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <EditText
+            android:id="@+id/edtemail"
+            android:hint="Input your Email"
+            android:layout_below="@+id/imageView"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtpass"
+            android:hint="Input your password"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@id/edtemail"
+            android:background="@drawable/bg_edittext"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="40dp">
+        <Button
+            android:id="@+id/btLogin"
+            android:background="@drawable/bg_button_green"
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/btExit"
+            android:background="@drawable/bg_button_green"
+            android:text="Exit"
+            android:layout_toRightOf="@id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
