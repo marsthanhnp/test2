@@ -7,9 +7,10 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/LO_input_login"
         android:background="@drawable/bg_white"
         android:layout_width="350dp"
-        android:layout_height="350dp">
+        android:layout_height="450dp">
         <ImageView
             android:id="@+id/imageView"
             android:layout_marginTop="10dp"
@@ -37,7 +38,15 @@
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberPassword"/>
+            android:inputType="textPassword"/>
+        <CheckBox
+            android:id="@+id/cb_rememberLogin"
+            android:layout_below="@id/edtpass"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:text="Nhớ thông tin đăng nhập."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
