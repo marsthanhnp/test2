@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    ImageView img_news,img_fanpage,img_gopy,img_tdmunews, img_info, img_hocphi, img_kynang, img_location;
+    ImageView img_news,img_fanpage,img_gopy,img_tdmunews, img_info, img_hocphi, img_kynang, img_location, img_about;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         img_hocphi=findViewById(R.id.img_hocphi);
         img_kynang=findViewById(R.id.img_kynang);
         img_location=findViewById(R.id.img_location);
+        img_about=findViewById(R.id.img_about);
+
 //        Gán toolbar mới thay cho toolbar mặc định
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_menu25x25);
@@ -112,6 +114,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent int_location = new Intent(MainActivity.this,LocationActivity.class);
                 startActivity(int_location);
+            }
+        });
+
+        img_about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int_about = new Intent(MainActivity.this,AboutActivity.class);
+                startActivity(int_about);
             }
         });
     }
