@@ -52,3 +52,5 @@ public class LocationActivity extends FragmentActivity implements OnMapReadyCall
     }
 
 }
+
+//https://www.youtube.com/watch?v=CCZPUeY94MU&ab_channel=HiepMaiThanh
