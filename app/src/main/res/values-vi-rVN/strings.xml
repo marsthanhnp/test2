@@ -17,4 +17,9 @@
     <string name="txt_map">Đến trường</string>
     <string name="txt_about">Giới thiệu</string>
     <string name="txt_slogan">Bắt đầu một hành trình mới</string>
+    <string name="hint_email">Tên đăng nhập</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="txt_luudangnhap">Nhớ thông tin đăng nhập.</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="btn_exit">Thoát</string>
 </resources>

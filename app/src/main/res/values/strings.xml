@@ -22,4 +22,9 @@
     <string name="txt_about">About</string>
     <string name="txt_slogan">Start a new Study Journey</string>
     <string name="txt_giaiphap" translatable="false">University ERP</string>
+    <string name="hint_email">Input your Username</string>
+    <string name="hint_password">Input your Password</string>
+    <string name="txt_luudangnhap">Remember.</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_exit">Exit</string>
 </resources>

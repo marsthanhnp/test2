@@ -20,7 +20,7 @@
             android:layout_height="150dp"/>
         <EditText
             android:id="@+id/edtemail"
-            android:hint="Input your Email"
+            android:hint="@string/hint_email"
             android:layout_below="@+id/imageView"
             android:layout_marginHorizontal="10dp"
             android:background="@drawable/bg_edittext"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"/>
         <EditText
             android:id="@+id/edtpass"
-            android:hint="Input your password"
+            android:hint="@string/hint_password"
             android:layout_marginHorizontal="10dp"
             android:layout_below="@id/edtemail"
             android:background="@drawable/bg_edittext"
@@ -44,7 +44,7 @@
             android:layout_below="@id/edtpass"
             android:padding="15dp"
             android:layout_marginTop="30dp"
-            android:text="Nhớ thông tin đăng nhập."
+            android:text="@string/txt_luudangnhap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </RelativeLayout>
@@ -56,14 +56,14 @@
         <Button
             android:id="@+id/btLogin"
             android:background="@drawable/bg_button_green"
-            android:text="Login"
+            android:text="@string/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
             android:layout_marginHorizontal="20dp"
             android:id="@+id/btExit"
             android:background="@drawable/bg_button_green"
-            android:text="Exit"
+            android:text="@string/btn_exit"
             android:layout_toRightOf="@id/btLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
