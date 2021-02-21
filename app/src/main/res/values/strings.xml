@@ -20,4 +20,6 @@
     <string name="txt_kynang">Study Skills</string>
     <string name="txt_map">Map</string>
     <string name="txt_about">About</string>
+    <string name="txt_slogan">Start a new Study Journey</string>
+    <string name="txt_giaiphap" translatable="false">University ERP</string>
 </resources>

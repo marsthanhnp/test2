@@ -2,76 +2,76 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item android:id="@+id/nav_info"
-            android:title="Thông tin sinh viên"
+            android:title="@string/txt_info"
             android:icon="@drawable/ic04"/>
         <item android:id="@+id/nav_about"
-            android:title="Giới thiệu"
+            android:title="@string/txt_about"
             android:icon="@drawable/ic01"/>
         <item android:id="@+id/nav_kynang"
-            android:title="Kỹ năng"
+            android:title="@string/txt_kynang"
             android:icon="@drawable/ic02"/>
         <item android:id="@+id/nav_map"
-            android:title="Địa chỉ trường"
+            android:title="@string/txt_map"
             android:icon="@drawable/ic03"/>
         <item android:id="@+id/nav_fanpage"
-            android:title="Fan Page"
+            android:title="@string/txt_fanpage"
             android:icon="@drawable/ic04"/>
     </group>
 
-    <group android:checkableBehavior="single">
-        <item android:title="Menu 08">
-            <menu>
-                <item android:id="@+id/nav_05"
-                    android:title="Menu 05"
-                    android:icon="@drawable/ic05"/>
-                <item android:id="@+id/nav_06"
-                    android:title="Menu 06"
-                    android:icon="@drawable/ic06"/>
-                <item android:id="@+id/nav_07"
-                    android:title="Menu 07"
-                    android:icon="@drawable/ic07"/>
-                <item android:id="@+id/nav_08"
-                    android:title="Menu 08"
-                    android:icon="@drawable/ic06"/>
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item android:title="Menu 08">-->
+<!--            <menu>-->
+<!--                <item android:id="@+id/nav_05"-->
+<!--                    android:title="Menu 05"-->
+<!--                    android:icon="@drawable/ic05"/>-->
+<!--                <item android:id="@+id/nav_06"-->
+<!--                    android:title="Menu 06"-->
+<!--                    android:icon="@drawable/ic06"/>-->
+<!--                <item android:id="@+id/nav_07"-->
+<!--                    android:title="Menu 07"-->
+<!--                    android:icon="@drawable/ic07"/>-->
+<!--                <item android:id="@+id/nav_08"-->
+<!--                    android:title="Menu 08"-->
+<!--                    android:icon="@drawable/ic06"/>-->
 
-            </menu>
+<!--            </menu>-->
 
-        </item>
+<!--        </item>-->
 
-    </group>
+<!--    </group>-->
 
-    <item android:title="Communication">
-        <menu>
-            <item android:id="@+id/nav_09"
-                android:title="Menu 09"
-                android:icon="@drawable/ic09"/>
-            <item android:id="@+id/nav_10"
-                android:title="Menu 10"
-                android:icon="@drawable/ic10"/>
-            <item android:id="@+id/nav_11"
-                android:title="Menu 11"
-                android:icon="@drawable/ic11"/>
-            <item android:id="@+id/nav_12"
-                android:title="Menu 12"
-                android:icon="@drawable/ic12"/>
-        </menu>
-    </item>
-    <item android:id="@+id/nav_132"
-        android:title="Về chúng tôi"
-        android:icon="@drawable/ic01"/>
-    <item android:id="@+id/nav_142"
-        android:title="Về chúng tôi"
-        android:icon="@drawable/ic01"/>
-    <item android:id="@+id/nav_152"
-        android:title="Về chúng tôi"
-        android:icon="@drawable/ic01"/>
-    <item android:id="@+id/nav_133"
-        android:title="Về chúng tôi"
-        android:icon="@drawable/ic01"/>
-    <item android:id="@+id/nav_144"
-        android:title="Về chúng tôi"
-        android:icon="@drawable/ic01"/>
-    <item android:id="@+id/nav_155"
-        android:title="Về chúng tôi"
-        android:icon="@drawable/ic01"/>
+<!--    <item android:title="Communication">-->
+<!--        <menu>-->
+<!--            <item android:id="@+id/nav_09"-->
+<!--                android:title="Menu 09"-->
+<!--                android:icon="@drawable/ic09"/>-->
+<!--            <item android:id="@+id/nav_10"-->
+<!--                android:title="Menu 10"-->
+<!--                android:icon="@drawable/ic10"/>-->
+<!--            <item android:id="@+id/nav_11"-->
+<!--                android:title="Menu 11"-->
+<!--                android:icon="@drawable/ic11"/>-->
+<!--            <item android:id="@+id/nav_12"-->
+<!--                android:title="Menu 12"-->
+<!--                android:icon="@drawable/ic12"/>-->
+<!--        </menu>-->
+<!--    </item>-->
+<!--    <item android:id="@+id/nav_132"-->
+<!--        android:title="Về chúng tôi"-->
+<!--        android:icon="@drawable/ic01"/>-->
+<!--    <item android:id="@+id/nav_142"-->
+<!--        android:title="Về chúng tôi"-->
+<!--        android:icon="@drawable/ic01"/>-->
+<!--    <item android:id="@+id/nav_152"-->
+<!--        android:title="Về chúng tôi"-->
+<!--        android:icon="@drawable/ic01"/>-->
+<!--    <item android:id="@+id/nav_133"-->
+<!--        android:title="Về chúng tôi"-->
+<!--        android:icon="@drawable/ic01"/>-->
+<!--    <item android:id="@+id/nav_144"-->
+<!--        android:title="Về chúng tôi"-->
+<!--        android:icon="@drawable/ic01"/>-->
+<!--    <item android:id="@+id/nav_155"-->
+<!--        android:title="Về chúng tôi"-->
+<!--        android:icon="@drawable/ic01"/>-->
 </menu>
