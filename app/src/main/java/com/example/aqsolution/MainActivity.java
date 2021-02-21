@@ -1,5 +1,6 @@
 package com.example.aqsolution;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,13 +11,16 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -26,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
 //        ẩn thanh toolbar
         drawerLayout=findViewById(R.id.drawer_layout);
-        navigationView=findViewById(R.id.nav_view);
+//        navigationView=findViewById(R.id.nav_view);
         toolbar=findViewById(R.id.toolbar);
 
 //        ánh xạ image view và view
@@ -45,12 +50,18 @@ public class MainActivity extends AppCompatActivity {
 //        Gán toolbar mới thay cho toolbar mặc định
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_menu25x25);
+
        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+
                drawerLayout.openDrawer(GravityCompat.START);
            }
        });
+
+
+
+
 
        img_news.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -125,6 +136,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+//tạo menu và gán
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
 
     @Override
     public void onBackPressed() {
@@ -137,5 +157,7 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+    
+
 
 }

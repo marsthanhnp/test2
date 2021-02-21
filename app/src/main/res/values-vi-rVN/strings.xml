@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_info">Lý lịch</string>
+    <string name="txt_lotrinh">Lộ trình</string>
+    <string name="txt_lichhoc">Lịch học</string>
+    <string name="txt_lichthi">Lịch thi</string>
+    <string name="txt_dkmh">Đăng ký MH</string>
+    <string name="txt_hocphi">Học phí</string>
+    <string name="txt_xacnhan">Xác nhận</string>
+    <string name="txt_diem">Điểm</string>
+    <string name="txt_ktx">Ký túc xá</string>
+    <string name="txt_renluyen">Rèn luyện</string>
+    <string name="txt_newsedu">Tin giáo dục</string>
+    <string name="txt_newstdm">Tin TDMU</string>
+    <string name="txt_gopy">Góp ý</string>
+    <string name="txt_kynang">Kỹ năng</string>
+    <string name="txt_map">Đến trường</string>
+    <string name="txt_about">Giới thiệu</string>
+</resources>

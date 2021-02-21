@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_01"
-            android:title="Menu 01"
+        <item android:id="@+id/nav_info"
+            android:title="Thông tin sinh viên"
+            android:icon="@drawable/ic04"/>
+        <item android:id="@+id/nav_about"
+            android:title="Giới thiệu"
             android:icon="@drawable/ic01"/>
-        <item android:id="@+id/nav_02"
-            android:title="Menu 02"
+        <item android:id="@+id/nav_kynang"
+            android:title="Kỹ năng"
             android:icon="@drawable/ic02"/>
-        <item android:id="@+id/nav_03"
-            android:title="Menu 03"
+        <item android:id="@+id/nav_map"
+            android:title="Địa chỉ trường"
             android:icon="@drawable/ic03"/>
-        <item android:id="@+id/nav_04"
-            android:title="Menu 04"
+        <item android:id="@+id/nav_fanpage"
+            android:title="Fan Page"
             android:icon="@drawable/ic04"/>
     </group>
 

@@ -1,6 +1,23 @@
 <resources>
-    <string name="app_name">AQSolution</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Open navigation close</string>
-    <string name="title_activity_location">Map</string>
+    <string name="app_name" translatable="false">AQSolution</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Open navigation close</string>
+    <string name="title_activity_location" translatable="false">Map</string>
+    <string name="txt_info">Infomation</string>
+    <string name="txt_lotrinh">Study program</string>
+    <string name="txt_lichhoc">Schedule</string>
+    <string name="txt_lichthi">Se. Schedule</string>
+    <string name="txt_dkmh">C. Registration</string>
+    <string name="txt_hocphi">Tuition fee</string>
+    <string name="txt_xacnhan">Certificate</string>
+    <string name="txt_diem">Scores</string>
+    <string name="txt_ktx">Dormitory</string>
+    <string name="txt_renluyen">Self-training</string>
+    <string name="txt_newsedu">Edu NEWS</string>
+    <string name="txt_newstdm">TDMU NEWS</string>
+    <string name="txt_fanpage" translatable="false">Fanpage</string>
+    <string name="txt_gopy">Feedback</string>
+    <string name="txt_kynang">Study Skills</string>
+    <string name="txt_map">Map</string>
+    <string name="txt_about">About</string>
 </resources>
