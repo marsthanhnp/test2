@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (tokenClass != null) {
 
 //                    toast cái token nhận được xem thử
-                    Toast.makeText(LoginActivity.this, tokenClass.getAccess_token(), Toast.LENGTH_LONG).show();
+//                    Toast.makeText(LoginActivity.this, tokenClass.getAccess_token(), Toast.LENGTH_LONG).show();
 
 //                    nếu có check thì nhớ các giá trị đăng nhập
                     if(checkBox.isChecked()){

@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        https://github.com/AnonimoDiabo/NavigationDrawer/tree/master/app/src/main/java/com/anonimodiabo/navigationdrawer
 
 //        ẩn thanh toolbar
         drawerLayout=findViewById(R.id.drawer_layout);
