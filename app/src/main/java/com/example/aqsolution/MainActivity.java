@@ -1,11 +1,9 @@
 package com.example.aqsolution;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -14,7 +12,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -34,8 +31,11 @@ public class MainActivity extends AppCompatActivity{
 
 //        ẩn thanh toolbar
         drawerLayout=findViewById(R.id.drawer_layout);
-//        navigationView=findViewById(R.id.nav_view);
+        navigationView=findViewById(R.id.nav_view);
         toolbar=findViewById(R.id.toolbar);
+//        Gán toolbar mới thay cho toolbar mặc định
+        setSupportActionBar(toolbar);
+//        toolbar.setNavigationIcon(R.drawable.ic_menu25x25);
 
 //        ánh xạ image view và view
         img_news=findViewById(R.id.im_news);
@@ -48,9 +48,40 @@ public class MainActivity extends AppCompatActivity{
         img_location=findViewById(R.id.img_location);
         img_about=findViewById(R.id.img_about);
 
-//        Gán toolbar mới thay cho toolbar mặc định
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.drawable.ic_menu25x25);
+
+//        21.02.2020
+
+//        navigationView.bringToFront();
+//        ActionBarDrawerToggle toggle=new
+//                ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+//        drawerLayout.addDrawerListener(toggle);
+//        toggle.syncState();
+
+//        Bắt sự kiện click vào item menu toolbar
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+                switch (menuItem.getItemId()) {
+                    case R.id.nav_info:
+                        Toast.makeText(MainActivity.this, "Dang chon Info", Toast.LENGTH_LONG).show();
+
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.nav_map:
+                        Toast.makeText(MainActivity.this, "Dang chon Map", Toast.LENGTH_LONG).show();
+
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.nav_about:
+                        Toast.makeText(MainActivity.this, "Dang chon About", Toast.LENGTH_LONG).show();
+
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                }
+                return false;
+            }
+        });
 
        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
            @Override
@@ -59,6 +90,7 @@ public class MainActivity extends AppCompatActivity{
                drawerLayout.openDrawer(GravityCompat.START);
            }
        });
+
 
 
 
@@ -137,13 +169,13 @@ public class MainActivity extends AppCompatActivity{
             }
         });
     }
-//tạo menu và gán
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main,menu);
-
-        return super.onCreateOptionsMenu(menu);
-    }
+////tạo menu và gán
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_main,menu);
+//
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
 
 
@@ -158,7 +190,7 @@ public class MainActivity extends AppCompatActivity{
             super.onBackPressed();
         }
     }
-    
+
 
 
 }
